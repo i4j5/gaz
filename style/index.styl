@@ -660,10 +660,19 @@
     padding 30px 0 40px 0
     box-shadow inset 0px 2px 18px 0px rgba(0, 0, 0, 0.11)
     margin 60px 0
+    &__text
+        font-size 12px
+        min-height 70px
+        line-height 1.4em
+        display tible
+        margin-top 5px
     & .zoom
         height auto
         display inline-block
         margin 5px
+        width 200px 
+        height 270px
+        vertical-align top
         img 
             margin 0
             width 200px
@@ -683,10 +692,10 @@
         color #000
         font-weight 500
         margin-bottom 20px
-    &__text
-        font-size 14px
-        line-height 1.6em
-        color #1b1b1b
+    // &__text
+    //     font-size 14px
+    //     line-height 1.6em
+    //     color #1b1b1b
     &__gallery
         padding 10px
     &__imgs
@@ -995,8 +1004,15 @@
         left 0
         opacity 0
         transition all .2s linear
+            
         &:hover
             opacity 1
+
+
+.reviews
+    .zoom__icon
+        height 200px
+        width 200px
 
 .close
     background url('../img/close.png') no-repeat center
@@ -1101,3 +1117,20 @@
 
 .modal-open
     overflow hidden
+    
+
+// .calculator
+//     &__items
+//         width 900px
+//         display table
+//         margin auto
+//         display flex
+//         justify-content center
+//         flex-direction row
+//         justify-content  space-between
+//     &__item
+//         width 200px
+//         height 300px
+//         border 1px solid #dddddd
+//         //margin 20px
+//         display inline-block

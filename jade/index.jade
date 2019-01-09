@@ -101,8 +101,7 @@ body.page
             input(type='hidden', name='utm_source', value='<?echo $utm_source?>')
             input(type='hidden', name='utm_medium', value='<?echo $utm_medium?>')
             input(type='hidden', name='utm_content', value='<?echo $utm_content?>')
-            input(type='hidden', name='order', value='ВК под ключ. Консультация по документам')
-            input(type="hidden" name="order" value="ВК под ключ. Консультация по документам")
+            input(type='hidden', name='order', value='Газоснабжение под ключ')
             input(type='submit' value='Получить консультацию').form__btn
 
 
@@ -168,7 +167,7 @@ body.page
           |Проектирование и согласование 
           +e.arrow
         +e.text
-          p В процессе проектирования инженер-проектировщик выезжает на место и обследует объект. На месте вы решаете все вопросы по поводу прокладки трубопровода, места установки оборудования, устройства вентиляционных каналов и дымохода. Затем выезжают геодезисты, выполняют топографическую сьемку и заверяют в департаменте Архитектуры. ЗПосле чего проектировщик формирует проектную документацию и согласовывает ее с АО «Газпромгазораспределение». Вся процедура занимает от 3 недель.
+          p В процессе проектирования инженер-проектировщик выезжает на место и обследует объект. На месте вы решаете все вопросы по поводу прокладки трубопровода, места установки оборудования, устройства вентиляционных каналов и дымохода. Затем выезжают геодезисты, выполняют топографическую сьемку и заверяют в департаменте Архитектуры. После чего проектировщик формирует проектную документацию и согласовывает ее с АО «Газпромгазораспределение». Вся процедура занимает от 3 недель.
 
 
       +e.item
@@ -202,7 +201,7 @@ body.page
           +e.text Какие документы понадобятся?
       .row
         +b.col_lg_7
-          .docs__title Документы, изготавливаемые ООО «БК Инвент»
+          .docs__title Документы, предоставляемые ООО «БК Инвент»
           ol.docs__list
             li СРО (лицензия)
             li Договор на технологическое присоединение
@@ -233,8 +232,7 @@ body.page
                 input(type='hidden', name='utm_source', value='<?echo $utm_source?>')
                 input(type='hidden', name='utm_medium', value='<?echo $utm_medium?>')
                 input(type='hidden', name='utm_content', value='<?echo $utm_content?>')
-                input(type='hidden', name='order', value='ВК под ключ. Консультация по документам')
-                input(type="hidden" name="order" value="ВК под ключ")
+                input(type='hidden', name='order', value='Газоснабжение под ключ')
                 input(type='submit' value='Получить список документов').form__btn
     //-+b.btn_style_blue Оставить заявку на консультацию инженера
 
@@ -245,33 +243,43 @@ body.page
         +b.zoom(data-img="case1.jpg")
           img(src="img/case1_mini.jpg")
           +e.icon
+          .reviews__text г. Ростов-на-Дону,<br>пер. Ашхабадский, 53<br>
         +b.zoom(data-img="case2.jpg")
-          img(src="img/case2_mini.jpg")
-          +e.icon
+            img(src="img/case2_mini.jpg")
+            +e.icon
+            .reviews__text Аксайский р-н,<br> х. Камышеваха,<br> Перламутровая, 15
         +b.zoom(data-img="case3.jpg")
           img(src="img/case3_mini.jpg")
           +e.icon
+          .reviews__text Аксайский р-н, <br>пос. Верхнетемерницкий,<br> ул. Дж.Бруно, 37<br>
         +b.zoom(data-img="case4.jpg")
           img(src="img/case4_mini.jpg")
           +e.icon
+          .reviews__text г.Ростов-на-Дону, ул.<br> Плеханова, 136<br>
         +b.zoom(data-img="case5.jpg")
           img(src="img/case5_mini.jpg")
           +e.icon
+          .reviews__text г.Ростов-на-Дону, <br>ул. 2-я Володарского<br>
         +b.zoom(data-img="case6.jpg")
           img(src="img/case6_mini.jpg")
           +e.icon
+          .reviews__text с. Большая Неклиновка, <br>ул. Школьная, 13<br>
         +b.zoom(data-img="case7.jpg")
           img(src="img/case7_mini.jpg")
           +e.icon
+          .reviews__text г.Ростов-на-Дону, <br>ул. Тарновского-Терлецкого, 90<br>
         +b.zoom(data-img="case8.jpg")
           img(src="img/case8_mini.jpg")
           +e.icon
+          .reviews__text Аксайский р-н, п. Темерницкий, <br>СНТ “Югтехионтаж” , <br>2-й Газонный , 10
         +b.zoom(data-img="case9.jpg")
           img(src="img/case9_mini.jpg")
           +e.icon
+          .reviews__text Аксайский р-н, <br>СНТ “Северная Ривьера, <br>пер. 2-Раскатный, 23”
         +b.zoom(data-img="case10.jpg")
           img(src="img/case10_mini.jpg")
           +e.icon
+          .reviews__text г. Ростов-на-Дону, <br>ул.Промышленная, 80<br>
 
       //-   +b.col._xs_12._md_10._md-offset_1
       //-     .slider
@@ -320,6 +328,14 @@ body.page
                 //-   .reviews__name Алина Евсеева
                 //-   .reviews__text Я обращалась в компанию БК Инвент для того, чтобы подключить канализацию в дом. Уже сейчас пользуюсь ею, чему очень рада. Долго не могла найти общий язык с Водоканалом, а обратившись в организацию БК Инвент, все мои вопросы были решены за 3 месяца, и построили, и сдали. Теперь мне не приходится как большинству моих соседей пользоваться ямой. Рекомендую обращаться в эту организацию!!!
   
+  +b.calculator
+    +e.items
+      +e.item
+      +e.item
+      +e.item
+      +e.item
+
+
   .container
     +b.title
       +e.wrap
@@ -373,8 +389,7 @@ body.page
             input(type='hidden', name='utm_source', value='<?echo $utm_source?>')
             input(type='hidden', name='utm_medium', value='<?echo $utm_medium?>')
             input(type='hidden', name='utm_content', value='<?echo $utm_content?>')
-            input(type='hidden', name='order', value='ВК под ключ. Консультация по документам')
-            input(type="hidden" name="order" value="ВК под ключ. Консультация по документам")
+            input(type='hidden', name='order', value='Газоснабжение под ключ')
             input(type='submit' value='Получить консультацию').form__btn
 
   .container
@@ -475,8 +490,7 @@ body.page
                 input(type='hidden', name='utm_source', value='<?echo $utm_source?>')
                 input(type='hidden', name='utm_medium', value='<?echo $utm_medium?>')
                 input(type='hidden', name='utm_content', value='<?echo $utm_content?>')
-                input(type='hidden', name='order', value='ВК под ключ. Консультация по документам')
-                input(type="hidden" name="order" value="ВК под ключ. Заказ звонка")
+                input(type='hidden', name='order', value='Газоснабжение под ключ')
                 input(type='submit' value='Заказать звонок').form__btn
 
   .modal#modal__order
@@ -496,8 +510,7 @@ body.page
                 input(type='hidden', name='utm_source', value='<?echo $utm_source?>')
                 input(type='hidden', name='utm_medium', value='<?echo $utm_medium?>')
                 input(type='hidden', name='utm_content', value='<?echo $utm_content?>')
-                input(type='hidden', name='order', value='ВК под ключ. Консультация по документам')
-                input(type="hidden" name="order" value="ВК под ключ. Консультация")
+                input(type='hidden', name='order', value='Газоснабжение под ключ')
                 input(type='submit' value='Отправить').form__btn
 
   .modal#modal__ok
