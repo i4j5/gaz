@@ -178,6 +178,9 @@ $(document).ready(function () {
 				var form = $(form),
 				    str = form.serialize();
 
+				var roistat = window.roistat.visit || null;
+				str = str + '&roistat=' + roistat;
+
 				var btn = form.children("[type='submit']");
 				//let btnText = btn.val()
 				//btn.val('Обработка...')
@@ -200,6 +203,8 @@ $(document).ready(function () {
 					}
 					yaCounter51570953.reachGoal(yatarget);
 					yatarget = 'order';
+
+					yaCounter53737453.reachGoal('site');
 				}).always(function () {
 					//btn.val(btnText)
 					$('.loader_submit').removeClass('loader_active');
